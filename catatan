@@ -1,0 +1,20 @@
+catatan = [{
+    id: string,
+    title: string,
+    createdAt: string,
+    updatedAt: string,
+    tags: array of string,
+    body: string,
+}]
+
+route:[{
+    path: "/notes",
+    method: "POST"
+    handler: (req, h)=>{
+        {title, tags, body} = req.payload;
+        return h.response()
+        .code(201)
+        .type('application/json')
+        .
+    }
+}]
